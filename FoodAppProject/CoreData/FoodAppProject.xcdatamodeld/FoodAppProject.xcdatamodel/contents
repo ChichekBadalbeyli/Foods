@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23D60" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Brands" representedClassName="Brands" syncable="YES">
+        <attribute name="brandImage" optional="YES" attributeType="String"/>
+        <attribute name="brandName" optional="YES" attributeType="String"/>
+        <attribute name="cuisinesTypeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="menuId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="typeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Cuisins" representedClassName="Cuisins" syncable="YES">
+        <attribute name="cuisinsImage" optional="YES" attributeType="String"/>
+        <attribute name="cuisinsName" optional="YES" attributeType="String"/>
+        <attribute name="cuisinsTypeId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Info" representedClassName="Info" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="info" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Menu" representedClassName="Menu" syncable="YES">
+        <attribute name="menuId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="orderImage" optional="YES" attributeType="String"/>
+        <attribute name="orderName" optional="YES" attributeType="String"/>
+    </entity>
+</model>

@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39181BDE2C0EED7D00603375 /* RegisterStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39181BDD2C0EED7D00603375 /* RegisterStruct.swift */; };
+		39181BE02C0EF2C800603375 /* LoginStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39181BDF2C0EF2C800603375 /* LoginStruct.swift */; };
+		39181BE22C0EFC9100603375 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39181BE12C0EFC9100603375 /* HomeViewController.swift */; };
+		39181BE42C0F09D600603375 /* FileManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39181BE32C0F09D600603375 /* FileManger.swift */; };
+		391D63462C1824CF00358622 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D63452C1824CF00358622 /* MenuViewController.swift */; };
+		391D63482C1833BA00358622 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D63472C1833BA00358622 /* MenuTableViewCell.swift */; };
+		391D63712C1B06E400358622 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391D63702C1B06E400358622 /* InfoViewController.swift */; };
+		392E3EB12C20557200FAC4E0 /* MenuModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3EB02C20557200FAC4E0 /* MenuModelViewController.swift */; };
+		392E3EB52C208FFE00FAC4E0 /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3EB42C208FFE00FAC4E0 /* BasketViewController.swift */; };
+		392E3EB72C20D01600FAC4E0 /* BasketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3EB62C20D01600FAC4E0 /* BasketTableViewCell.swift */; };
+		392E3EB92C22FE0500FAC4E0 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 392E3EB82C22FE0500FAC4E0 /* PaymentViewController.swift */; };
+		392E3EC22C23038C00FAC4E0 /* Bank.json in Resources */ = {isa = PBXBuildFile; fileRef = 392E3EC12C23038C00FAC4E0 /* Bank.json */; };
+		393CA3E62C0C788300653869 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393CA3E52C0C788300653869 /* LogInController.swift */; };
+		393CA3E82C0C79E900653869 /* LottieFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 393CA3E72C0C79E900653869 /* LottieFile.json */; };
+		393CA3EA2C0E379B00653869 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393CA3E92C0E379B00653869 /* RegisterController.swift */; };
+		395BC8FB2C25D5FD003103EB /* SearchModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BC8FA2C25D5FD003103EB /* SearchModelViewController.swift */; };
+		395BC8FD2C28587C003103EB /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395BC8FC2C28587C003103EB /* AddCardViewController.swift */; };
+		3963DA632C2B575A0076C546 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3963DA622C2B575A0076C546 /* FinalViewController.swift */; };
+		396F424A2C0F86B00029C448 /* Brands+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42402C0F86B00029C448 /* Brands+CoreDataClass.swift */; };
+		396F424B2C0F86B00029C448 /* Brands+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42412C0F86B00029C448 /* Brands+CoreDataProperties.swift */; };
+		396F424E2C0F86B00029C448 /* Cuisins+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42442C0F86B00029C448 /* Cuisins+CoreDataClass.swift */; };
+		396F424F2C0F86B00029C448 /* Cuisins+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42452C0F86B00029C448 /* Cuisins+CoreDataProperties.swift */; };
+		396F42542C0F8CD20029C448 /* BrandsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42532C0F8CD20029C448 /* BrandsStruct.swift */; };
+		396F42562C0F8CEB0029C448 /* MenuStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42552C0F8CEB0029C448 /* MenuStruct.swift */; };
+		396F42582C0F8D2C0029C448 /* CuisinsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42572C0F8D2C0029C448 /* CuisinsStruct.swift */; };
+		396F425F2C103A320029C448 /* Menu+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F425B2C103A320029C448 /* Menu+CoreDataClass.swift */; };
+		396F42602C103A320029C448 /* Menu+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F425C2C103A320029C448 /* Menu+CoreDataProperties.swift */; };
+		396F42652C103AB60029C448 /* Info+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42632C103AB60029C448 /* Info+CoreDataClass.swift */; };
+		396F42662C103AB60029C448 /* Info+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42642C103AB60029C448 /* Info+CoreDataProperties.swift */; };
+		396F426A2C1049830029C448 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42692C1049830029C448 /* DataManager.swift */; };
+		396F42712C10721C0029C448 /* HomeHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396F42702C10721C0029C448 /* HomeHeaderReusableView.xib */; };
+		396F42722C10721C0029C448 /* HomeHeaderReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F426F2C10721C0029C448 /* HomeHeaderReusableView.swift */; };
+		396F42772C10748D0029C448 /* HomeHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396F42762C10748D0029C448 /* HomeHeaderViewCell.xib */; };
+		396F42782C10748D0029C448 /* HomeHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42752C10748D0029C448 /* HomeHeaderViewCell.swift */; };
+		396F427A2C107A0C0029C448 /* HomeHeaderReusableModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F42792C107A0C0029C448 /* HomeHeaderReusableModelView.swift */; };
+		396F427C2C1085A10029C448 /* HomeModelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F427B2C1085A10029C448 /* HomeModelViewController.swift */; };
+		396F42802C10960E0029C448 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396F427F2C10960E0029C448 /* HomeCollectionViewCell.swift */; };
+		396F42882C11E0FC0029C448 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 396F42872C11E0FC0029C448 /* Media.xcassets */; };
+		398DE0692C16EF51009A1790 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DE0682C16EF51009A1790 /* SearchViewController.swift */; };
+		398DE06B2C16F2C5009A1790 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 398DE06A2C16F2C5009A1790 /* SearchCollectionViewCell.swift */; };
+		3992FED72C2F594700B3E092 /* BasketModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3992FED62C2F594700B3E092 /* BasketModelView.swift */; };
+		3992FED92C2F66AE00B3E092 /* CardStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3992FED82C2F66AE00B3E092 /* CardStruct.swift */; };
+		39A6F0562C09B92D005D6C60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F0552C09B92D005D6C60 /* AppDelegate.swift */; };
+		39A6F0582C09B92D005D6C60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F0572C09B92D005D6C60 /* SceneDelegate.swift */; };
+		39A6F05D2C09B92D005D6C60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 39A6F05C2C09B92D005D6C60 /* Base */; };
+		39A6F0602C09B92D005D6C60 /* FoodAppProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 39A6F05E2C09B92D005D6C60 /* FoodAppProject.xcdatamodeld */; };
+		39A6F0652C09B92E005D6C60 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 39A6F0642C09B92E005D6C60 /* Base */; };
+		39A6F06E2C09BF12005D6C60 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 39A6F06D2C09BF12005D6C60 /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		39181BDD2C0EED7D00603375 /* RegisterStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterStruct.swift; sourceTree = "<group>"; };
+		39181BDF2C0EF2C800603375 /* LoginStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStruct.swift; sourceTree = "<group>"; };
+		39181BE12C0EFC9100603375 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		39181BE32C0F09D600603375 /* FileManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManger.swift; sourceTree = "<group>"; };
+		391D63452C1824CF00358622 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		391D63472C1833BA00358622 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		391D63702C1B06E400358622 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		392E3EB02C20557200FAC4E0 /* MenuModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModelViewController.swift; sourceTree = "<group>"; };
+		392E3EB42C208FFE00FAC4E0 /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		392E3EB62C20D01600FAC4E0 /* BasketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketTableViewCell.swift; sourceTree = "<group>"; };
+		392E3EB82C22FE0500FAC4E0 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		392E3EC12C23038C00FAC4E0 /* Bank.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Bank.json; sourceTree = "<group>"; };
+		393CA3E52C0C788300653869 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		393CA3E72C0C79E900653869 /* LottieFile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LottieFile.json; sourceTree = "<group>"; };
+		393CA3E92C0E379B00653869 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		395BC8FA2C25D5FD003103EB /* SearchModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModelViewController.swift; sourceTree = "<group>"; };
+		395BC8FC2C28587C003103EB /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		3963DA622C2B575A0076C546 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
+		396F42402C0F86B00029C448 /* Brands+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brands+CoreDataClass.swift"; sourceTree = "<group>"; };
+		396F42412C0F86B00029C448 /* Brands+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Brands+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		396F42442C0F86B00029C448 /* Cuisins+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cuisins+CoreDataClass.swift"; sourceTree = "<group>"; };
+		396F42452C0F86B00029C448 /* Cuisins+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cuisins+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		396F42532C0F8CD20029C448 /* BrandsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandsStruct.swift; sourceTree = "<group>"; };
+		396F42552C0F8CEB0029C448 /* MenuStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuStruct.swift; sourceTree = "<group>"; };
+		396F42572C0F8D2C0029C448 /* CuisinsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuisinsStruct.swift; sourceTree = "<group>"; };
+		396F425B2C103A320029C448 /* Menu+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+CoreDataClass.swift"; sourceTree = "<group>"; };
+		396F425C2C103A320029C448 /* Menu+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Menu+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		396F42632C103AB60029C448 /* Info+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Info+CoreDataClass.swift"; sourceTree = "<group>"; };
+		396F42642C103AB60029C448 /* Info+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Info+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		396F42692C1049830029C448 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		396F426F2C10721C0029C448 /* HomeHeaderReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableView.swift; sourceTree = "<group>"; };
+		396F42702C10721C0029C448 /* HomeHeaderReusableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderReusableView.xib; sourceTree = "<group>"; };
+		396F42752C10748D0029C448 /* HomeHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderViewCell.swift; sourceTree = "<group>"; };
+		396F42762C10748D0029C448 /* HomeHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderViewCell.xib; sourceTree = "<group>"; };
+		396F42792C107A0C0029C448 /* HomeHeaderReusableModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderReusableModelView.swift; sourceTree = "<group>"; };
+		396F427B2C1085A10029C448 /* HomeModelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelViewController.swift; sourceTree = "<group>"; };
+		396F427F2C10960E0029C448 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		396F42872C11E0FC0029C448 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		398DE0682C16EF51009A1790 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		398DE06A2C16F2C5009A1790 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		3992FED62C2F594700B3E092 /* BasketModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketModelView.swift; sourceTree = "<group>"; };
+		3992FED82C2F66AE00B3E092 /* CardStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStruct.swift; sourceTree = "<group>"; };
+		39A6F0522C09B92D005D6C60 /* FoodAppProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodAppProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39A6F0552C09B92D005D6C60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		39A6F0572C09B92D005D6C60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		39A6F05C2C09B92D005D6C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		39A6F05F2C09B92D005D6C60 /* FoodAppProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodAppProject.xcdatamodel; sourceTree = "<group>"; };
+		39A6F0642C09B92E005D6C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		39A6F0662C09B92E005D6C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		39A6F04F2C09B92D005D6C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39A6F06E2C09BF12005D6C60 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		392E3EB22C20719E00FAC4E0 /* MenuController */ = {
+			isa = PBXGroup;
+			children = (
+				391D63472C1833BA00358622 /* MenuTableViewCell.swift */,
+				392E3EB02C20557200FAC4E0 /* MenuModelViewController.swift */,
+				391D63452C1824CF00358622 /* MenuViewController.swift */,
+			);
+			path = MenuController;
+			sourceTree = "<group>";
+		};
+		392E3EB32C2071EB00FAC4E0 /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				398DE0682C16EF51009A1790 /* SearchViewController.swift */,
+				398DE06A2C16F2C5009A1790 /* SearchCollectionViewCell.swift */,
+				395BC8FA2C25D5FD003103EB /* SearchModelViewController.swift */,
+			);
+			path = SearchController;
+			sourceTree = "<group>";
+		};
+		392E3EBA2C22FE0F00FAC4E0 /* BasketController */ = {
+			isa = PBXGroup;
+			children = (
+				392E3EB42C208FFE00FAC4E0 /* BasketViewController.swift */,
+				3992FED62C2F594700B3E092 /* BasketModelView.swift */,
+				392E3EB62C20D01600FAC4E0 /* BasketTableViewCell.swift */,
+			);
+			path = BasketController;
+			sourceTree = "<group>";
+		};
+		396F42522C0F87B60029C448 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				396F42632C103AB60029C448 /* Info+CoreDataClass.swift */,
+				396F42642C103AB60029C448 /* Info+CoreDataProperties.swift */,
+				396F425B2C103A320029C448 /* Menu+CoreDataClass.swift */,
+				396F425C2C103A320029C448 /* Menu+CoreDataProperties.swift */,
+				396F42402C0F86B00029C448 /* Brands+CoreDataClass.swift */,
+				396F42412C0F86B00029C448 /* Brands+CoreDataProperties.swift */,
+				396F42442C0F86B00029C448 /* Cuisins+CoreDataClass.swift */,
+				396F42452C0F86B00029C448 /* Cuisins+CoreDataProperties.swift */,
+				39A6F05E2C09B92D005D6C60 /* FoodAppProject.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		396F42672C1046D30029C448 /* DataStructs */ = {
+			isa = PBXGroup;
+			children = (
+				396F42532C0F8CD20029C448 /* BrandsStruct.swift */,
+				396F42572C0F8D2C0029C448 /* CuisinsStruct.swift */,
+				396F42552C0F8CEB0029C448 /* MenuStruct.swift */,
+			);
+			path = DataStructs;
+			sourceTree = "<group>";
+		};
+		396F42682C1047510029C448 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				39181BDD2C0EED7D00603375 /* RegisterStruct.swift */,
+				3992FED82C2F66AE00B3E092 /* CardStruct.swift */,
+				39181BDF2C0EF2C800603375 /* LoginStruct.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		396F42732C1072880029C448 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3963DA622C2B575A0076C546 /* FinalViewController.swift */,
+				395BC8FC2C28587C003103EB /* AddCardViewController.swift */,
+				392E3EB82C22FE0500FAC4E0 /* PaymentViewController.swift */,
+				393CA3E92C0E379B00653869 /* RegisterController.swift */,
+				393CA3E52C0C788300653869 /* LogInController.swift */,
+				391D63702C1B06E400358622 /* InfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		396F42742C1072B90029C448 /* ManagerFiles */ = {
+			isa = PBXGroup;
+			children = (
+				39181BE32C0F09D600603375 /* FileManger.swift */,
+				396F42692C1049830029C448 /* DataManager.swift */,
+			);
+			path = ManagerFiles;
+			sourceTree = "<group>";
+		};
+		396F42812C10C06F0029C448 /* HomeControllers */ = {
+			isa = PBXGroup;
+			children = (
+				396F426F2C10721C0029C448 /* HomeHeaderReusableView.swift */,
+				396F42792C107A0C0029C448 /* HomeHeaderReusableModelView.swift */,
+				39181BE12C0EFC9100603375 /* HomeViewController.swift */,
+				396F427B2C1085A10029C448 /* HomeModelViewController.swift */,
+			);
+			path = HomeControllers;
+			sourceTree = "<group>";
+		};
+		396F42822C11A0B90029C448 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				396F427F2C10960E0029C448 /* HomeCollectionViewCell.swift */,
+				396F42752C10748D0029C448 /* HomeHeaderViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		39A6F0492C09B92D005D6C60 = {
+			isa = PBXGroup;
+			children = (
+				39A6F0542C09B92D005D6C60 /* FoodAppProject */,
+				39A6F0532C09B92D005D6C60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		39A6F0532C09B92D005D6C60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39A6F0522C09B92D005D6C60 /* FoodAppProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39A6F0542C09B92D005D6C60 /* FoodAppProject */ = {
+			isa = PBXGroup;
+			children = (
+				39A6F0552C09B92D005D6C60 /* AppDelegate.swift */,
+				39A6F0572C09B92D005D6C60 /* SceneDelegate.swift */,
+				39A6F05B2C09B92D005D6C60 /* Main.storyboard */,
+				39A6F0632C09B92E005D6C60 /* LaunchScreen.storyboard */,
+				396F42762C10748D0029C448 /* HomeHeaderViewCell.xib */,
+				396F42702C10721C0029C448 /* HomeHeaderReusableView.xib */,
+				396F42872C11E0FC0029C448 /* Media.xcassets */,
+				392E3EB32C2071EB00FAC4E0 /* SearchController */,
+				396F42822C11A0B90029C448 /* Cells */,
+				392E3EB22C20719E00FAC4E0 /* MenuController */,
+				396F42812C10C06F0029C448 /* HomeControllers */,
+				396F42732C1072880029C448 /* Controller */,
+				392E3EBA2C22FE0F00FAC4E0 /* BasketController */,
+				396F42742C1072B90029C448 /* ManagerFiles */,
+				396F42682C1047510029C448 /* Structs */,
+				396F42672C1046D30029C448 /* DataStructs */,
+				39A6F0662C09B92E005D6C60 /* Info.plist */,
+				393CA3E72C0C79E900653869 /* LottieFile.json */,
+				392E3EC12C23038C00FAC4E0 /* Bank.json */,
+				396F42522C0F87B60029C448 /* CoreData */,
+			);
+			path = FoodAppProject;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		39A6F0512C09B92D005D6C60 /* FoodAppProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 39A6F0692C09B92E005D6C60 /* Build configuration list for PBXNativeTarget "FoodAppProject" */;
+			buildPhases = (
+				39A6F04E2C09B92D005D6C60 /* Sources */,
+				39A6F04F2C09B92D005D6C60 /* Frameworks */,
+				39A6F0502C09B92D005D6C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoodAppProject;
+			packageProductDependencies = (
+				39A6F06D2C09BF12005D6C60 /* Lottie */,
+			);
+			productName = FoodAppProject;
+			productReference = 39A6F0522C09B92D005D6C60 /* FoodAppProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		39A6F04A2C09B92D005D6C60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					39A6F0512C09B92D005D6C60 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 39A6F04D2C09B92D005D6C60 /* Build configuration list for PBXProject "FoodAppProject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 39A6F0492C09B92D005D6C60;
+			packageReferences = (
+				39A6F06C2C09BF12005D6C60 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = 39A6F0532C09B92D005D6C60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				39A6F0512C09B92D005D6C60 /* FoodAppProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		39A6F0502C09B92D005D6C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				396F42772C10748D0029C448 /* HomeHeaderViewCell.xib in Resources */,
+				393CA3E82C0C79E900653869 /* LottieFile.json in Resources */,
+				396F42712C10721C0029C448 /* HomeHeaderReusableView.xib in Resources */,
+				39A6F0652C09B92E005D6C60 /* Base in Resources */,
+				396F42882C11E0FC0029C448 /* Media.xcassets in Resources */,
+				39A6F05D2C09B92D005D6C60 /* Base in Resources */,
+				392E3EC22C23038C00FAC4E0 /* Bank.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39A6F04E2C09B92D005D6C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392E3EB52C208FFE00FAC4E0 /* BasketViewController.swift in Sources */,
+				396F42782C10748D0029C448 /* HomeHeaderViewCell.swift in Sources */,
+				391D63712C1B06E400358622 /* InfoViewController.swift in Sources */,
+				396F42542C0F8CD20029C448 /* BrandsStruct.swift in Sources */,
+				396F427A2C107A0C0029C448 /* HomeHeaderReusableModelView.swift in Sources */,
+				3992FED72C2F594700B3E092 /* BasketModelView.swift in Sources */,
+				396F42582C0F8D2C0029C448 /* CuisinsStruct.swift in Sources */,
+				396F425F2C103A320029C448 /* Menu+CoreDataClass.swift in Sources */,
+				392E3EB92C22FE0500FAC4E0 /* PaymentViewController.swift in Sources */,
+				396F42602C103A320029C448 /* Menu+CoreDataProperties.swift in Sources */,
+				396F42562C0F8CEB0029C448 /* MenuStruct.swift in Sources */,
+				395BC8FD2C28587C003103EB /* AddCardViewController.swift in Sources */,
+				391D63462C1824CF00358622 /* MenuViewController.swift in Sources */,
+				393CA3EA2C0E379B00653869 /* RegisterController.swift in Sources */,
+				39A6F0562C09B92D005D6C60 /* AppDelegate.swift in Sources */,
+				391D63482C1833BA00358622 /* MenuTableViewCell.swift in Sources */,
+				392E3EB72C20D01600FAC4E0 /* BasketTableViewCell.swift in Sources */,
+				396F424A2C0F86B00029C448 /* Brands+CoreDataClass.swift in Sources */,
+				396F424B2C0F86B00029C448 /* Brands+CoreDataProperties.swift in Sources */,
+				396F427C2C1085A10029C448 /* HomeModelViewController.swift in Sources */,
+				396F42722C10721C0029C448 /* HomeHeaderReusableView.swift in Sources */,
+				398DE06B2C16F2C5009A1790 /* SearchCollectionViewCell.swift in Sources */,
+				396F42652C103AB60029C448 /* Info+CoreDataClass.swift in Sources */,
+				396F42662C103AB60029C448 /* Info+CoreDataProperties.swift in Sources */,
+				396F424E2C0F86B00029C448 /* Cuisins+CoreDataClass.swift in Sources */,
+				396F424F2C0F86B00029C448 /* Cuisins+CoreDataProperties.swift in Sources */,
+				3992FED92C2F66AE00B3E092 /* CardStruct.swift in Sources */,
+				393CA3E62C0C788300653869 /* LogInController.swift in Sources */,
+				39181BE22C0EFC9100603375 /* HomeViewController.swift in Sources */,
+				39181BE42C0F09D600603375 /* FileManger.swift in Sources */,
+				39A6F0582C09B92D005D6C60 /* SceneDelegate.swift in Sources */,
+				39A6F0602C09B92D005D6C60 /* FoodAppProject.xcdatamodeld in Sources */,
+				396F426A2C1049830029C448 /* DataManager.swift in Sources */,
+				3963DA632C2B575A0076C546 /* FinalViewController.swift in Sources */,
+				39181BDE2C0EED7D00603375 /* RegisterStruct.swift in Sources */,
+				395BC8FB2C25D5FD003103EB /* SearchModelViewController.swift in Sources */,
+				396F42802C10960E0029C448 /* HomeCollectionViewCell.swift in Sources */,
+				392E3EB12C20557200FAC4E0 /* MenuModelViewController.swift in Sources */,
+				39181BE02C0EF2C800603375 /* LoginStruct.swift in Sources */,
+				398DE0692C16EF51009A1790 /* SearchViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		39A6F05B2C09B92D005D6C60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39A6F05C2C09B92D005D6C60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		39A6F0632C09B92E005D6C60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				39A6F0642C09B92E005D6C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		39A6F0672C09B92E005D6C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		39A6F0682C09B92E005D6C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		39A6F06A2C09B92E005D6C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodAppProject/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Cicek.FoodAppProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		39A6F06B2C09B92E005D6C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoodAppProject/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Cicek.FoodAppProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		39A6F04D2C09B92D005D6C60 /* Build configuration list for PBXProject "FoodAppProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A6F0672C09B92E005D6C60 /* Debug */,
+				39A6F0682C09B92E005D6C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		39A6F0692C09B92E005D6C60 /* Build configuration list for PBXNativeTarget "FoodAppProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39A6F06A2C09B92E005D6C60 /* Debug */,
+				39A6F06B2C09B92E005D6C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		39A6F06C2C09BF12005D6C60 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		39A6F06D2C09BF12005D6C60 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39A6F06C2C09BF12005D6C60 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		39A6F05E2C09B92D005D6C60 /* FoodAppProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				39A6F05F2C09B92D005D6C60 /* FoodAppProject.xcdatamodel */,
+			);
+			currentVersion = 39A6F05F2C09B92D005D6C60 /* FoodAppProject.xcdatamodel */;
+			path = FoodAppProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 39A6F04A2C09B92D005D6C60 /* Project object */;
+}

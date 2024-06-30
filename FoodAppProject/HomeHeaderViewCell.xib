@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="HomeHeaderViewCell" id="gTV-IL-0wX" customClass="HomeHeaderViewCell" customModule="FoodAppProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="127" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="127" height="79"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IxO-rg-kEo">
+                        <rect key="frame" x="0.0" y="0.0" width="127" height="56.666666666666664"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0u-rF-Utr">
+                        <rect key="frame" x="43" y="58.666666666666664" width="41" height="20.333333333333336"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="V0u-rF-Utr" secondAttribute="bottom" id="XC3-fY-el1"/>
+                <constraint firstItem="V0u-rF-Utr" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="XkF-LH-2o5"/>
+                <constraint firstAttribute="trailing" secondItem="IxO-rg-kEo" secondAttribute="trailing" id="pOp-AK-xwZ"/>
+                <constraint firstItem="IxO-rg-kEo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="s28-u7-nip"/>
+                <constraint firstItem="V0u-rF-Utr" firstAttribute="top" secondItem="IxO-rg-kEo" secondAttribute="bottom" constant="2" id="u5U-im-VUz"/>
+                <constraint firstItem="IxO-rg-kEo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="unV-SX-2XR"/>
+                <constraint firstItem="IxO-rg-kEo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="vEY-Tz-wNJ"/>
+            </constraints>
+            <size key="customSize" width="127" height="79"/>
+            <connections>
+                <outlet property="cuisinsImage" destination="IxO-rg-kEo" id="Eau-IE-9WO"/>
+                <outlet property="cuisinsLabel" destination="V0u-rF-Utr" id="UpM-iF-ZP8"/>
+            </connections>
+            <point key="canvasLocation" x="-2.4647887323943665" y="-66.412213740458014"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,20 +8,17 @@
 import UIKit
 
 class InfoViewController: UIViewController {
-
+    
     @IBOutlet weak var infoLabel: UILabel!
     
     var restaurantInfo: String?
     var restaurantName: String?
-        
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-            if let info = restaurantInfo, let name = restaurantName {
-                infoLabel.text = info
-                self.title = name
-            }
-            
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if let info = restaurantInfo, let name = restaurantName {
+            infoLabel.text = info
+            self.title = name
         }
-
+    }
 }

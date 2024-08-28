@@ -9,7 +9,7 @@ import UIKit
 import Lottie
 
 class FinalViewController: UIViewController {
-
+    
     @IBOutlet weak var lottieView: LottieAnimationView!
     
     override func viewDidLoad() {
@@ -23,8 +23,9 @@ class FinalViewController: UIViewController {
         let backButton = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(customBackAction))
         navigationItem.leftBarButtonItem = backButton
     }
+    
     @objc private func customBackAction() {
-            navigationController?.popToRootViewController(animated: true)
-        }
-
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
 }

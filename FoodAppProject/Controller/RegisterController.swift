@@ -21,7 +21,6 @@ class RegisterController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func signUpActionButton(_ sender: Any) {

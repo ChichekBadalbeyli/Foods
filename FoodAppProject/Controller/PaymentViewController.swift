@@ -96,7 +96,7 @@ class PaymentViewController: UIViewController{
             if let basketNavigator = self.storyboard?.instantiateViewController(withIdentifier: "FinalViewController") as? FinalViewController {
                 self.navigationController?.pushViewController(basketNavigator, animated: true)
             }
-            print("Payment controller opened")
+            print("Payment controller")
         }
     }
 }
@@ -104,17 +104,18 @@ class PaymentViewController: UIViewController{
 extension PaymentViewController:UIPickerViewDelegate{
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let selectedRow = cardPicker.selectedRow(inComponent: 0)
-                if selectedRow < bankCards.count {
-                    let selectedCard = bankCards[selectedRow]
-                    print("Выбрана карта: \(selectedCard.cardName)")
-                    
-                } else {
-                    print("Выбрана опция: \(addNewCardOption)")
-                    presentAddNewCardDialog()
-                }
+        if selectedRow < bankCards.count {
+            let selectedCard = bankCards[selectedRow]
+            print(selectedCard.cardName)
+            
+        } else {
+            print(addNewCardOption)
+            presentAddNewCardDialog()
+        }
     }
     
 }
+
 extension PaymentViewController:UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -123,14 +124,13 @@ extension PaymentViewController:UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return bankCards.count + 1
     }
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            if row < bankCards.count {
-                return bankCards[row].cardName
-            } else {
-                return addNewCardOption
-            }
+        if row < bankCards.count {
+            return bankCards[row].cardName
+        } else {
+            return addNewCardOption
         }
-    
-    
+    }
 }
 

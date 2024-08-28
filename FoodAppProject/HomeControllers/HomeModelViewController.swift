@@ -24,10 +24,10 @@ class HomeModelViewController {
     
     func filterBrands (forCuisinTypeId cuisinTypeId: Int) {
         filteredBrands = brands.filter { $0.cuisinesTypeId == cuisinTypeId
-           
         }
         fetchItemsCallback?()
     }
+    
     func filterMenu (for menuID: Int) {
         filteredMenu = brands.filter {$0.menuId==menuID}
         fetchItemsCallback?()

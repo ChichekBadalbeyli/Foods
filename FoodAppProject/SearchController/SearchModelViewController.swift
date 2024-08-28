@@ -15,7 +15,7 @@ class SearchModelViewController {
     func fetchItems() {
         let foodData = MenuList()
         menu = foodData.menuList
-        filteredMenu = menu // Изначально filteredMenu равен menu
+        filteredMenu = menu 
         fetchItemsCallback?()
     }
 }

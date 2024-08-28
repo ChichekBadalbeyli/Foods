@@ -12,11 +12,11 @@ class HomeCollectionViewCell: UICollectionViewCell {
     @IBOutlet private var brandImage: UIImageView!
     
     override func awakeFromNib() {
-            super.awakeFromNib()
+        super.awakeFromNib()
         brandImage.contentMode = .scaleAspectFill
-             brandImage.clipsToBounds = true
-             brandImage.layer.cornerRadius = 20
-        }
+        brandImage.clipsToBounds = true
+        brandImage.layer.cornerRadius = 20
+    }
     
     func configure(with image: UIImage?, label: String?) {
         brandImage.image = image

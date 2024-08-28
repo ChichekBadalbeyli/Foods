@@ -16,10 +16,10 @@ class MyCuisins {
     var cuisins: [CuisinsStruct] = []
     
     init () {
-       cuisins = [ CuisinsStruct(cuisinsImage: "FastFood", cuisinsName: "Burger", cuisinsTypeId: 1),
-                   CuisinsStruct(cuisinsImage: "Pizza", cuisinsName: "Pizza", cuisinsTypeId: 2),
-                   CuisinsStruct(cuisinsImage: "Doner", cuisinsName: "Doner", cuisinsTypeId: 3),
-                   CuisinsStruct(cuisinsImage: "Coffe", cuisinsName: "Coffee", cuisinsTypeId: 4),]
+        cuisins = [ CuisinsStruct(cuisinsImage: "FastFood", cuisinsName: "Burger", cuisinsTypeId: 1),
+                    CuisinsStruct(cuisinsImage: "Pizza", cuisinsName: "Pizza", cuisinsTypeId: 2),
+                    CuisinsStruct(cuisinsImage: "Doner", cuisinsName: "Doner", cuisinsTypeId: 3),
+                    CuisinsStruct(cuisinsImage: "Coffe", cuisinsName: "Coffee", cuisinsTypeId: 4),]
     }
 }
 

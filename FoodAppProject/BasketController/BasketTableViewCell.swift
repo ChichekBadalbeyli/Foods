@@ -8,7 +8,7 @@
 import UIKit
 
 class BasketTableViewCell: UITableViewCell {
-
+    
     @IBOutlet private var orderImage: UIImageView!
     
     @IBOutlet private var orderName: UILabel!
@@ -17,17 +17,15 @@ class BasketTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
+    
     func configure(with item: MenuStruct) {
-           orderImage.image = UIImage(named: item.orderImage)
-           orderName.text = "X\(item.quantity) \(item.orderName)"
-           price.text = "\(item.price) azn"
-       }
-
+        orderImage.image = UIImage(named: item.orderImage)
+        orderName.text = "X\(item.quantity) \(item.orderName)"
+        price.text = "\(item.price) azn"
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
-
 }

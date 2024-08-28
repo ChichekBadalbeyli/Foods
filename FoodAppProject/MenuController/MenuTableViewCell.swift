@@ -98,12 +98,12 @@ class MenuTableViewCell: UITableViewCell {
     
     @IBAction func removeButtonAction(_ sender: Any) {
         guard var order = order else { return }
-         if order.quantity > 0 {
-             order.quantity -= 1
-             self.order = order
-             delegate?.didRemoveFromBasket(cell: self, order: order)
-             Basket.shared.removeFromBasket(item: order, at: 0) 
-             print("Removed: \(order.orderName) quantity is now \(order.quantity)")
-         }
-     }
+        if order.quantity > 0 {
+            order.quantity -= 1
+            self.order = order
+            delegate?.didRemoveFromBasket(cell: self, order: order)
+            Basket.shared.removeFromBasket(item: order, at: 0)
+            print("Removed: \(order.orderName) quantity is now \(order.quantity)")
+        }
+    }
 }

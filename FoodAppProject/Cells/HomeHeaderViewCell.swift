@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeHeaderViewCell: UICollectionViewCell {
-
+    
     
     @IBOutlet private var cuisinsLabel: UILabel!
     
@@ -26,5 +26,5 @@ class HomeHeaderViewCell: UICollectionViewCell {
         cuisinsImage.image = cuisinImage
         cuisinsLabel.text = cuisinName
     }
-
+    
 }

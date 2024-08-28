@@ -30,9 +30,9 @@ class LogInController: UIViewController {
         lottieView.play()
         lottieView.loopMode = .loop
         manager.getUsers { users in
-                self.users = users
-                }
-
+            self.users = users
+        }
+        
     }
     
     @IBAction func signInButton(_ sender: Any) {
@@ -44,24 +44,24 @@ class LogInController: UIViewController {
             }
         }
     }
-        
-        @IBAction func signUpButton(_ sender: Any) {
-            let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterController") as! RegisterController
-                    navigationController?.show(controller, sender: nil)
-                    controller.callback = { user in
-                        self.myLogin = LoginStruct(password: user.password, mobile: user.number)
-                        self.mobileNumberTextField.text = user.number
-                        self.passwordTextField.text = user.password
-                        self.users.append(user)
-                        self.manager.saveUser(data:self.users)
-                    }
-                }
+    
+    @IBAction func signUpButton(_ sender: Any) {
+        let controller = storyboard?.instantiateViewController(withIdentifier: "RegisterController") as! RegisterController
+        navigationController?.show(controller, sender: nil)
+        controller.callback = { user in
+            self.myLogin = LoginStruct(password: user.password, mobile: user.number)
+            self.mobileNumberTextField.text = user.number
+            self.passwordTextField.text = user.password
+            self.users.append(user)
+            self.manager.saveUser(data:self.users)
+        }
+    }
     
     private func showAlert(message: String) {
-            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            present(alert, animated: true, completion: nil)
-        }
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
+    }
     
     private func switchToHome() {
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
@@ -69,7 +69,5 @@ class LogInController: UIViewController {
             sceneDelegate.setHomeAsRoot()
         }
     }
-
-        
 }
 

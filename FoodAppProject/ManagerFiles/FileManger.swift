@@ -4,14 +4,12 @@ import Foundation
 
 class FileManagerHelp {
     
-    
     func getFilePath() -> URL {
         let files = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let path = files[0].appendingPathComponent("new.json")
         print("File path: \(path)")
         return path
     }
-    
     
     func saveUser(data: [RegisterStruct]) {
         let dateFormatter = DateFormatter()
@@ -25,7 +23,6 @@ class FileManagerHelp {
             print("Failed to save user data: \(error.localizedDescription)")
         }
     }
-    
     
     func updateMenuItemQuantity(item: MenuStruct, quantity: Int) {
         getUsers { users in
@@ -43,6 +40,7 @@ class FileManagerHelp {
             }
         }
     }
+    
     func getUsers(complete: @escaping ([RegisterStruct]) -> Void) {
         let decoder = JSONDecoder()
         let dateFormatter = DateFormatter()
@@ -58,7 +56,6 @@ class FileManagerHelp {
             complete([])
         }
     }
-    
     
     func appendOrderToUser(order: MenuStruct, completion: @escaping () -> Void) {
         guard let currentNumber = UserDefaults.standard.string(forKey: "currentNumber") else {
@@ -79,8 +76,6 @@ class FileManagerHelp {
         }
     }
     
-    
-    
     func saveBasketForUser(userNumber: String, basket: [MenuStruct]) {
         getUsers { users in
             var updatedUsers = users
@@ -93,7 +88,6 @@ class FileManagerHelp {
             }
         }
     }
-    
     
     func loadBasketForUser(userNumber: String, completion: @escaping ([MenuStruct]) -> Void) {
         getUsers { users in
@@ -124,29 +118,7 @@ class FileManagerHelp {
             }
         }
     }
-//    func saveMenu(data: [MenuStruct]) {
-//        let encoder = JSONEncoder()
-//        encoder.outputFormatting = .prettyPrinted
-//        do {
-//            let jsonData = try encoder.encode(data)
-//            try jsonData.write(to: getFilePath())
-//            print("Menu data saved successfully.")
-//        } catch {
-//            print("Failed to save menu data: \(error.localizedDescription)")
-//        }
-//    }
-//
-//    func getMenu() -> [MenuStruct]? {
-//        let decoder = JSONDecoder()
-//        do {
-//            let jsonData = try Data(contentsOf: getFilePath())
-//            let menuItems = try decoder.decode([MenuStruct].self, from: jsonData)
-//            return menuItems
-//        } catch {
-//            print("Failed to retrieve menu data: \(error.localizedDescription)")
-//            return nil
-//        }
-//    }
+    
     func getCardsForUser(userNumber: String, completion: @escaping ([CardStruct]) -> Void) {
         getUsers { users in
             if let user = users.first(where: { $0.number == userNumber }) {

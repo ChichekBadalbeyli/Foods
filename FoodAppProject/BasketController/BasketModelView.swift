@@ -23,22 +23,19 @@ class BasketViewModel {
     }
     
     func removeItem(at index: Int, completion: @escaping () -> Void) {
-           guard index < items.count else {
-               return
-           }
-           
-           let itemToRemove = items[index]
-           
-           Basket.shared.removeFromBasket(item: itemToRemove, at: index)
-           
-           fileManager.getUsers { users in
-               var updatedUsers = users
-               if let currentNumber = UserDefaults.standard.string(forKey: "currentNumber"),
-                  let userIndex = updatedUsers.firstIndex(where: { $0.number == currentNumber }) {
-                   updatedUsers[userIndex].orderList = Basket.shared.items
-                   self.fileManager.saveUser(data: updatedUsers)
-                   completion()
-               }
-           }
-       }
+        guard index < items.count else {
+            return
+        }
+        let itemToRemove = items[index]
+        Basket.shared.removeFromBasket(item: itemToRemove, at: index)
+        fileManager.getUsers { users in
+            var updatedUsers = users
+            if let currentNumber = UserDefaults.standard.string(forKey: "currentNumber"),
+               let userIndex = updatedUsers.firstIndex(where: { $0.number == currentNumber }) {
+                updatedUsers[userIndex].orderList = Basket.shared.items
+                self.fileManager.saveUser(data: updatedUsers)
+                completion()
+            }
+        }
+    }
 }

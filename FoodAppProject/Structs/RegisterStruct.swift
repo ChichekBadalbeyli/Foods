@@ -8,13 +8,11 @@
 import Foundation
 
 struct RegisterStruct: Codable {
-    
     var fullname: String
     var number: String
     var password: String
     var dateOfBirth: String
     var orderList: [MenuStruct]
     var cardInfo: [CardStruct]
-    
 }
 

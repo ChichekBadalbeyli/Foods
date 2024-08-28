@@ -23,10 +23,8 @@ class HomeHeaderReusableView: UICollectionReusableView,UICollectionViewDataSourc
         viewModel.fetchItemsCallBack = { [weak self] in
             self?.cuisinsCollection.reloadData()
         }
-        
-        viewModel.fetchCuisins() 
+        viewModel.fetchCuisins()
     }
-
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         viewModel.cuisinsType.count
@@ -36,10 +34,10 @@ class HomeHeaderReusableView: UICollectionReusableView,UICollectionViewDataSourc
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(HomeHeaderViewCell.self)", for: indexPath) as! HomeHeaderViewCell
         let cuisin = viewModel.cuisinsType[indexPath.item]
         cell.configure(with: UIImage(named: cuisin.cuisinsImage),
-        cuisinName: cuisin.cuisinsName)
+                       cuisinName: cuisin.cuisinsName)
         cell.layer.cornerRadius = 20
-                cell.layer.masksToBounds = true
-                return cell
+        cell.layer.masksToBounds = true
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -50,19 +48,19 @@ class HomeHeaderReusableView: UICollectionReusableView,UICollectionViewDataSourc
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-            let width = collectionView.frame.width / 2
-            let height = collectionView.frame.height / 2 
-            return CGSize(width: width, height: height)
-        }
-
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 0
-        }
-
-        func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-            return 0
-        }
-
+        let width = collectionView.frame.width / 2
+        let height = collectionView.frame.height / 2
+        return CGSize(width: width, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
     
 }
 

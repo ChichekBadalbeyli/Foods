@@ -9,7 +9,6 @@ import CoreData
 import UIKit
 import Foundation
 
-
 class Basket {
     static let shared = Basket()
     
@@ -20,13 +19,13 @@ class Basket {
     
     func addToBasket(item: MenuStruct) {
         if let existingItemIndex = items.firstIndex(where: { $0.orderName == item.orderName }) {
-                   items[existingItemIndex].quantity += 1
-               } else {
-                   var newItem = item
-                   newItem.quantity = 1
-                   items.append(newItem)
-               }
-               saveBasket()
+            items[existingItemIndex].quantity += 1
+        } else {
+            var newItem = item
+            newItem.quantity = 1
+            items.append(newItem)
+        }
+        saveBasket()
     }
     
     func clearBasket() {
@@ -41,12 +40,11 @@ class Basket {
                     items.remove(at: existingItemIndex)
                 }
                 saveBasket()
-                NotificationCenter.default.post(name: NSNotification.Name("BasketUpdated"), object: nil) 
+                NotificationCenter.default.post(name: NSNotification.Name("BasketUpdated"), object: nil)
             }
         }
     }
-
-
+    
     func saveBasket() {
         if let currentNumber = UserDefaults.standard.string(forKey: "currentNumber") {
             fileManager.saveBasketForUser(userNumber: currentNumber, basket: items)
@@ -86,32 +84,32 @@ class BasketViewController: UIViewController,UITableViewDataSource,UITableViewDe
         super.viewDidLoad()
         
         NotificationCenter.default.addObserver(self, selector: #selector(basketUpdated), name: NSNotification.Name("BasketUpdated"), object: nil)
-
-                   if let userNumber = UserDefaults.standard.string(forKey: "currentNumber") {
-                       Basket.shared.switchUser(to: userNumber)
-                   }
-                   updateTotalPrice()
-                   tableView.reloadData()
+        
+        if let userNumber = UserDefaults.standard.string(forKey: "currentNumber") {
+            Basket.shared.switchUser(to: userNumber)
+        }
+        updateTotalPrice()
+        tableView.reloadData()
     }
-
-
+    
+    
     @objc func basketUpdated() {
         print("Basket updated - reloading table view and updating total price")
         tableView.reloadData()
         updateTotalPrice()
     }
-
-
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return Basket.shared.items.count
+        return Basket.shared.items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "BasketTableViewCell", for: indexPath) as! BasketTableViewCell
-            let foodItem = Basket.shared.items[indexPath.row]
-            cell.configure(with: foodItem)
-            return cell
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BasketTableViewCell", for: indexPath) as! BasketTableViewCell
+        let foodItem = Basket.shared.items[indexPath.row]
+        cell.configure(with: foodItem)
+        return cell
+    }
     
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .delete
@@ -126,7 +124,7 @@ class BasketViewController: UIViewController,UITableViewDataSource,UITableViewDe
             NotificationCenter.default.post(name: NSNotification.Name("BasketItemRemoved"), object: itemToRemove)
         }
     }
-
+    
     @IBAction func myBasketAction(_ sender: Any) {
         if Basket.shared.items.isEmpty {
             let alert = UIAlertController(title: "", message: "Your basket is empty", preferredStyle: .alert)
